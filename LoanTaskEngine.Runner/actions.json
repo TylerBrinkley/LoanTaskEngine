@@ -1,0 +1,76 @@
+[
+    {
+        "action": "createLoan",
+        "loanIdentifier": "loan1"
+    },
+    {
+        "action": "createBorrower",
+        "loanIdentifier": "loan1",
+        "borrowerIdentifier": "borr1"
+    },
+    {
+        "action": "createBorrower",
+        "loanIdentifier": "loan1",
+        "borrowerIdentifier": "borr2"
+    },
+    {
+        "action": "setLoanField",
+        "loanIdentifier": "loan1",
+        "field": "loanAmount",
+        "value": 100000
+    },
+    {
+        "action": "setLoanField",
+        "loanIdentifier": "loan1",
+        "field": "loanType",
+        "value": "Purchase"
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr1",
+        "field": "firstName",
+        "value": "Jane"
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr1",
+        "field": "lastName",
+        "value": "Smith"
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr2",
+        "field": "firstName",
+        "value": "John"
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr2",
+        "field": "lastName",
+        "value": "Smith"
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr2",
+        "field": "firstName",
+        "value": null
+    },
+    {
+        "action": "setLoanField",
+        "loanIdentifier": "loan1",
+        "field": "purchasePrice",
+        "value": 500000
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr2",
+        "field": "firstName",
+        "value": "Joseph"
+    },
+    {
+        "action": "setBorrowerField",
+        "borrowerIdentifier": "borr2",
+        "field": "address",
+        "value": "500 California St."
+    }
+]

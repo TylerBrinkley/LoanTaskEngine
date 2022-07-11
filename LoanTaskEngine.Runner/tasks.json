@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Require purchase price for purchase loans",
+        "entity": "Loan",
+        "triggerConditions": [
+            {
+                "field": "loanAmount",
+                "comparator": "exists"
+            },
+            {
+                "field": "loanType",
+                "comparator": "equals",
+                "value": "Purchase"
+            }
+        ],
+        "completionConditions": [
+            {
+                "field": "purchasePrice",
+                "comparator": "exists"
+            }
+        ]
+    },
+    {
+        "name": "Require address for borrower",
+        "entity": "Borrower",
+        "triggerConditions": [
+            {
+                "field": "firstName",
+                "comparator": "exists"
+            },
+            {
+                "field": "lastName",
+                "comparator": "exists"
+            }
+        ],
+        "completionConditions": [
+            {
+                "field": "address",
+                "comparator": "exists"
+            }
+        ]
+    }
+]
